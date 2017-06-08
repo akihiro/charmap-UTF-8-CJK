@@ -1,0 +1,11 @@
+--- utf8_gen.py.orig	2017-06-08 14:04:26.162492116 +0900
++++ utf8_gen.py	2017-06-08 14:04:58.018877252 +0900
+@@ -267,7 +267,7 @@
+                 # the EastAsianWidth.txt file.
+                 if re.match(r'.*<reserved-.+>\.\.<reserved-.+>.*', LINE):
+                     continue
+-                if re.match(r'^[^;]*;[WF]', LINE):
++                if re.match(r'^[^;]*;[WFA]', LINE):
+                     EAST_ASIAN_WIDTH_LINES.append(LINE.strip())
+         with open('UTF-8', mode='w') as OUTFILE:
+             # Processing UnicodeData.txt and write CHARMAP to UTF-8 file
